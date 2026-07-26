@@ -258,6 +258,26 @@ h3 { font-size: clamp(1.15rem, 2.5vw, 1.5rem); }
 }
 .cta-band h2 { color: var(--ink); }
 
+/* -------- FAQ -------- */
+.faq { max-width: 760px; margin: 2.2rem auto 0; }
+.faq details {
+  background: var(--white); border: 1px solid var(--line); border-radius: 14px;
+  padding: 0 1.3rem; margin-bottom: .8rem; box-shadow: var(--shadow-sm);
+  transition: box-shadow .2s ease;
+}
+.faq details[open] { box-shadow: var(--shadow); }
+.faq summary {
+  list-style: none; cursor: pointer; padding: 1.1rem 2rem 1.1rem 0; position: relative;
+  font-weight: 600; font-size: 1.05rem; color: var(--ink);
+}
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after {
+  content: "+"; position: absolute; right: .1rem; top: 50%; transform: translateY(-50%);
+  font-size: 1.5rem; color: var(--red); line-height: 1; transition: transform .2s ease;
+}
+.faq details[open] summary::after { content: "–"; }
+.faq details p { margin: 0 0 1.1rem; color: var(--ink-soft); }
+
 /* -------- Partners -------- */
 .partners { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 1rem 2.4rem; margin-top: 1.6rem; }
 .partners .p { font-weight: 600; color: var(--ink-soft); }

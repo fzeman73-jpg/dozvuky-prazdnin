@@ -16,7 +16,7 @@ assets/main.js    – mobilní menu, odpočet, animace
 ```
 
 Vstupenky jsou v celém webu prolinkované na předprodej **BOOM Events**:
-<https://connect.boomevents.org/cs/event/dozvukyprazdnin>
+<https://connect.boomevents.org/cs/encantar-sro-dcrau/dozvukyprazdnin26?fromGuidepost=true>
 
 ## Publikace na GitHub Pages
 
