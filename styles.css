@@ -282,6 +282,18 @@ h3 { font-size: clamp(1.15rem, 2.5vw, 1.5rem); }
 .partners { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 1rem 2.4rem; margin-top: 1.6rem; }
 .partners .p { font-weight: 600; color: var(--ink-soft); }
 
+/* -------- Loga (partneři) -------- */
+.logo-row { display: flex; flex-wrap: wrap; align-items: stretch; justify-content: center; gap: 1.2rem; margin-top: 1.8rem; }
+.logo-tile {
+  background: #fff; border: 1px solid var(--line); border-radius: 14px;
+  padding: 1rem 1.5rem; display: flex; flex-direction: column; align-items: center; justify-content: center;
+  gap: .5rem; box-shadow: var(--shadow-sm); min-width: 150px; transition: transform .15s ease, box-shadow .2s ease;
+}
+a.logo-tile:hover { transform: translateY(-3px); box-shadow: var(--shadow); text-decoration: none; }
+.logo-tile img { display: block; height: 58px; width: auto; }
+.logo-tile.znak img { height: 76px; }
+.logo-tile .cap { font-size: .78rem; font-weight: 600; color: var(--ink-soft); text-align: center; }
+
 /* -------- Footer -------- */
 .site-footer { background: var(--ink); color: rgba(255,255,255,.8); padding: 3rem 0 2rem; }
 .site-footer a { color: var(--gold-soft); }
