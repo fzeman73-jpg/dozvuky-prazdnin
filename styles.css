@@ -161,6 +161,24 @@ h3 { font-size: clamp(1.15rem, 2.5vw, 1.5rem); }
 .hero-art { position: absolute; top: 0; right: 0; width: min(48%, 560px); height: 100%; pointer-events: none; z-index: 1; }
 .hero-art svg { position: absolute; inset: 0; width: 100%; height: 100%; }
 @media (max-width: 940px) { .hero-art { display: none; } }
+
+/* Foto Karol a Kvído v hero */
+.hero-photo {
+  position: absolute; z-index: 3; top: 50%; right: clamp(0px, 3vw, 40px);
+  transform: translateY(-50%);
+  width: min(34%, 340px); margin: 0;
+  filter: drop-shadow(0 22px 34px rgba(90,10,4,.4));
+}
+.hero-photo img {
+  display: block; width: 100%; height: auto;
+  animation: floaty 6.5s ease-in-out infinite; transform-box: fill-box; transform-origin: center;
+}
+@media (max-width: 940px) {
+  .hero-photo {
+    position: static; transform: none; width: min(66%, 300px);
+    margin: 2.2rem auto 0; right: auto; top: auto;
+  }
+}
 .float { animation: floaty 6s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
 .float.f2 { animation-duration: 7.5s; animation-delay: -2s; }
 .float.f3 { animation-duration: 5.4s; animation-delay: -1s; }
