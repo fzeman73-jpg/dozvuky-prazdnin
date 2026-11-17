@@ -2,7 +2,7 @@
 
 Statický web benefičního festivalu **Dozvuky prázdnin 2027** — sobota 18. září 2027, Areál Farská louka (Zámecká 627), Lomnice nad Lužnicí. Celý výtěžek podpoří Charitu Třeboň. Nasazeno přes GitHub Pages na doméně **https://dozvukyprazdnin.cz**.
 
-Vzhled 2027: pozdně letní soumrak nad jihočeským rybníkem; „dozvuky“ jako soustředné vlny kolem zapadajícího slunce. Písma Lora (nadpisy) a Inter (text).
+Vzhled 2027: festivalový plakát z konce léta — papírový podklad, tučná typografie, rajčatově červená, slunečně žlutá a rybniční zelená, tvrdé obrysy a stíny. Dominantou úvodu je velké datum 18. 9. Písma Bricolage Grotesque (nadpisy) a Inter (text).
 
 ## Struktura
 
