@@ -1,53 +1,40 @@
-# Dozvuky prázdnin s Charitou Třeboň — web akce
+# Dozvuky prázdnin 2027 s Charitou Třeboň — web festivalu
 
-Statický web k akci **Dozvuky prázdnin** — sobota 12. září 2026, Areál Farská louka (Zámecká 627), Lomnice nad Lužnicí. Nasazeno přes GitHub Pages na doméně **https://dozvukyprazdnin.cz**.
+Statický web benefičního festivalu **Dozvuky prázdnin 2027** — sobota 18. září 2027, Areál Farská louka (Zámecká 627), Lomnice nad Lužnicí. Celý výtěžek podpoří Charitu Třeboň. Nasazeno přes GitHub Pages na doméně **https://dozvukyprazdnin.cz**.
+
+Vzhled 2027: pozdně letní soumrak nad jihočeským rybníkem; „dozvuky“ jako soustředné vlny kolem zapadajícího slunce. Písma Lora (nadpisy) a Inter (text).
 
 ## Struktura
 
 ```
-index.html         – úvodní stránka (hero, odpočet, program, FAQ, CTA)
-program.html       – časový program dne
-interpreti.html    – medailonky účinkujících + odkazy
-info.html          – místo, mapa, doprava, parkování, občerstvení
-charita.html       – o Charitě Třeboň a výtěžku
-vstupenky.html     – ceny, co je v ceně, odkaz na předprodej
-styles.css         – styly (festivní paleta dle plakátu, letní ilustrace)
-main.js            – mobilní menu, odpočet, animace
-og-image.png       – náhledový obrázek pro sdílení (Open Graph, 1200×630)
-favicon.svg        – ikona webu (sluníčko)
-apple-touch-icon.png – ikona pro iOS
-sitemap.xml        – mapa webu pro vyhledávače
-robots.txt         – pravidla pro roboty + odkaz na sitemapu
-CNAME              – vlastní doména (dozvukyprazdnin.cz)
+index.html           – úvod (hero se scénou, line-up, charita, kdy/kde, FAQ)
+interpreti.html      – potvrzení interpreti + místa pro další jména
+info.html            – místo, mapa, doprava, parkování
+charita.html         – o Charitě Třeboň a výtěžku
+404.html             – stránka „nenalezeno“
+program.html         – přesměrování na interpreti.html (staré odkazy)
+vstupenky.html       – přesměrování na úvod (staré odkazy)
+styles.css           – styly (barvy v :root na začátku souboru)
+main.js              – mobilní menu, odpočet dní, animace
+og-image.png         – náhled při sdílení (1200×630)
+favicon.svg, apple-touch-icon.png – ikony
+logo-charita-trebon.jpg
+sitemap.xml, robots.txt, CNAME
 ```
 
-Vstupenky jsou v celém webu prolinkované na předprodej **BOOM Events**:
-<https://connect.boomevents.org/cs/encantar-sro-dcrau/dozvukyprazdnin26?fromGuidepost=true>
-
-## SEO a AI vyhledávání
-
-- Kompletní meta tagy: title, description, keywords, canonical, robots, geo (lokální SEO).
-- Open Graph + Twitter karty s vlastním náhledovým obrázkem (hezký náhled při sdílení).
-- Strukturovaná data JSON-LD: Event/Festival (datum, místo, GPS, účinkující, cena, vstupenky, dílčí vystoupení), FAQPage, BreadcrumbList, WebSite — pro Google i AI vyhledávače (ChatGPT, Perplexity, Google AI).
-- sitemap.xml + robots.txt, favicon, apple-touch-icon.
+Prodej vstupenek na webu záměrně není.
 
 ## Úpravy obsahu
 
-- **Datum / místo / ceny**: hledej text v `.html` souborech (jsou na více místech kvůli patičce a strukturovaným datům — uprav všude).
-- **Odpočet**: cílové datum je v `main.js` (`2026-09-12T14:00:00+02:00`).
-- **Barvy a ilustrace**: proměnné na začátku `styles.css` (`:root`) a hero ilustrace v `index.html`.
-- **Interpreti a odkazy**: `interpreti.html`.
+- **Nový interpret**: v `interpreti.html` zkopíruj blok `<article class="artist">` a jednu kartu „Další interpret“ nahraď; na úvodu (`index.html`) uprav sekci *Line-up 2027*. Doplň jméno i do strukturovaných dat (`"performer"` v `index.html`).
+- **Datum / místo**: je na více místech (hlavička, patička, FAQ, strukturovaná data) — uprav všude. Odpočet je v `main.js`.
+- **Barvy**: proměnné na začátku `styles.css`.
 
-## Publikace / aktualizace na GitHub Pages
+## Publikace
 
-Repozitář: `fzeman73-jpg/dozvuky-prazdnin`. Web se po každé změně sám přebuduje.
+Repozitář `fzeman73-jpg/dozvuky-prazdnin`, větev `main`. Po každé změně se web sám přebuduje, za ~1 minutu je živý.
 
-1. Na GitHubu otevři repozitář → **Add file → Upload files** → přetáhni upravené soubory → **Commit changes** (do větve `main`).
-2. Za ~1 minutu je změna živá na https://dozvukyprazdnin.cz.
+## Odkazy
 
-## Zdroje informací o interpretech
-
-- Karol a Kvído – <https://karolakvido.cz/>
 - František Zeman – <https://frantisekzeman.cz/>
-- Epydemye – <https://www.epydemye.cz/>
 - Charita Třeboň – <https://trebon.charita.cz/>
