@@ -126,9 +126,9 @@ em, .it { font-style: italic; font-weight: 500; }
 /* ---------- Hero ---------- */
 .hero {
   position: relative; overflow: hidden; color: #fff;
-  min-height: clamp(760px, 100vh, 940px);
+  min-height: clamp(820px, 100vh, 960px);
   background: linear-gradient(180deg, #120F27 0%, #231D4A 32%, #4A3470 55%, #9A5279 72%, #E0806A 86%, #F6A86A 100%);
-  padding: 140px 0 0;
+  padding: 116px 0 0;
 }
 @media (max-width: 880px) { .hero { padding: 120px 0 300px; min-height: 0; } }
 .hero-scene { position: absolute; inset: 0; pointer-events: none; }
@@ -142,10 +142,33 @@ em, .it { font-style: italic; font-weight: 500; }
 .hero .container { position: relative; z-index: 2; }
 .hero-text { max-width: 780px; }
 .hero .eyebrow { color: var(--sun); }
-.hero h1 { color: #fff; margin-bottom: .2em; text-shadow: 0 4px 30px rgba(18,15,39,.5); }
-.hero h1 .year { display: block; font-style: italic; font-weight: 500; color: var(--sun); }
-.hero-sub { font-family: var(--font-head); font-style: italic; font-size: clamp(1.25rem, 2.6vw, 1.7rem); color: rgba(255,255,255,.9); margin: 0 0 1.6rem; }
-.hero-meta { display: flex; flex-wrap: wrap; gap: .6rem; margin: 0 0 2rem; padding: 0; list-style: none; }
+.hero h1 { color: #fff; margin-bottom: .1em; font-size: clamp(2.1rem, 5vw, 3.6rem); text-shadow: 0 4px 30px rgba(18,15,39,.5); }
+.hero h1 .year { font-style: italic; font-weight: 500; color: var(--sun); }
+.hero-sub { font-family: var(--font-head); font-style: italic; font-size: clamp(1.15rem, 2.3vw, 1.5rem); color: rgba(255,255,255,.88); margin: 0 0 .4rem; }
+
+/* Velké datum konání — dominanta hero */
+.hero-date {
+  display: flex; align-items: center; gap: clamp(.6rem, 2vw, 1.4rem);
+  margin: .2rem 0 1.6rem; line-height: 1;
+  font-family: var(--font-head);
+}
+.hd-num {
+  font-size: clamp(7rem, 34vw, 15rem); font-weight: 700; letter-spacing: -.045em; line-height: .82;
+  background: linear-gradient(180deg, #FFF1C9 0%, #FFD07A 45%, #F2945A 100%);
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+  filter: drop-shadow(0 10px 40px rgba(242,148,90,.35));
+}
+.hd-side { display: flex; flex-direction: column; gap: .5em; }
+.hd-month {
+  font-size: clamp(3rem, 14vw, 6.4rem); font-style: italic; font-weight: 700; color: #fff;
+  line-height: .9; letter-spacing: -.02em; text-shadow: 0 4px 30px rgba(18,15,39,.5);
+}
+.hd-meta {
+  font-family: var(--font-body); text-transform: uppercase; letter-spacing: .24em;
+  font-size: clamp(.8rem, 2vw, 1.15rem); font-weight: 600; color: var(--sun);
+}
+.hd-meta b { color: #fff; font-weight: 600; margin-left: .35em; }
+.hero-meta { display: flex; flex-wrap: wrap; gap: .6rem; margin: 0 0 1.6rem; padding: 0; list-style: none; }
 .hero-meta li {
   display: inline-flex; align-items: center; gap: .55rem;
   padding: .55rem 1rem; border-radius: 999px;
@@ -157,7 +180,7 @@ em, .it { font-style: italic; font-weight: 500; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: .8rem; }
 
 .countdown {
-  display: inline-flex; align-items: baseline; gap: .7rem; margin-top: 2rem;
+  display: inline-flex; align-items: baseline; gap: .7rem; margin-top: 1.4rem;
   font-size: .95rem; color: rgba(255,255,255,.8);
 }
 .countdown .num { font-family: var(--font-head); font-size: clamp(2.2rem, 5vw, 3rem); font-weight: 700; color: #fff; line-height: 1; }
